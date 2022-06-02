@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: hello1-app
-        image: #path to your docker image
+        image: localhost:32000/hello1:latest
         ports:
         - containerPort: 8000
