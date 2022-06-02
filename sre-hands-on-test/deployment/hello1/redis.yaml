@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app:  hello1-app
+        redis: hello1-redis
     spec:
       containers:
       - name: redis
