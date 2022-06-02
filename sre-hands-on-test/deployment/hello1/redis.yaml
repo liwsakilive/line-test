@@ -2,10 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello1-redis
+  namespace: hello
 spec:
   selector:
     matchLabels:
       app: hello1-app
+      redis: hello1-redis
   replicas: 1
   template:
     metadata:
