@@ -1,0 +1,5 @@
+{
+    "scripts" {
+      "start": "node hello1.js",
+    },
+}
