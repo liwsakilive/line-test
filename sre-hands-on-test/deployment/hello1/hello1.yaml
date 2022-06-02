@@ -5,7 +5,7 @@ metadata:
   namespace: hello
   labels:
     app: hello1-app
-    app: hello1-redis
+    redis: hello1-redis
 spec:
   replicas: 2
   selector:
