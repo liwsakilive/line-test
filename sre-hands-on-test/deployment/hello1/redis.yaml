@@ -6,7 +6,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: hello1-app
+      #app: hello1-app
       redis: hello1-redis
   replicas: 1
   template:
