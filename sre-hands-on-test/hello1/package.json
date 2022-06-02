@@ -1,5 +1,28 @@
 {
-    "scripts" {
-      "start": "node hello1.js",
-    },
+  "name": "hello1",
+  "version": "1.0.0",
+  "description": "line test",
+  "main": "hello-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hello-1.js",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liwsakilive/line-test.git"
+  },
+  "author": "Liwsaki Live",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liwsakilive/line-test/issues"
+  },
+  "homepage": "https://github.com/liwsakilive/line-test#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "redis": "^4.1.0"
+  }
 }

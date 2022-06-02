@@ -1,4 +1,4 @@
-FROM node:fermium-alpine
+FROM node:18.2.0-alpine
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -10,4 +10,4 @@ COPY . /usr/src/app
 
 EXPOSE 8000
 
-CMD ["npm","start"]
+CMD ["npm","run","start"]
