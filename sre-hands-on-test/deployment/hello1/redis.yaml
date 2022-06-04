@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello1-redis
+  name: redis-hello1-deployment
   namespace: hello
 spec:
   selector:
@@ -14,8 +14,8 @@ spec:
         app:  redis-hello1
     spec:
       containers:
-      - name: redis
-        image: redis:latest
+      - name: redis-hello1
+        image: "docker.io/redis:6.0.5"
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
