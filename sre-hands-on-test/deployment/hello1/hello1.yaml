@@ -22,6 +22,8 @@ spec:
         - containerPort: 8000
         env:
         - name: host
-          value: hello1-app-service
+          value: "hello1-app-service"
         - name: port
-          vaule: 6379
+          value: 6379
+        - name: password
+          value: 
