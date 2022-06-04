@@ -27,4 +27,4 @@ spec:
         - name: port
           vaule: 6379
         - name: password
-          value: 
+          value: ""
