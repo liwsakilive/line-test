@@ -6,10 +6,9 @@ metadata:
 spec:
   selector:
     app: hello2-app
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - protocol: TCP
     port: 5000
     targetPort: 8000
 #    nodePort: 30001
-  type: ClusterIP
