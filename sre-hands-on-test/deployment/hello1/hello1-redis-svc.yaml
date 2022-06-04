@@ -6,9 +6,8 @@ metadata:
 spec:
   selector:
     app: redis-hello1
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - protocol: TCP
     port: 6379
     targetPort: 6379
-  type: ClusterIP
