@@ -24,6 +24,6 @@ spec:
         - name: host
           value: "hello1-app-service"
         - name: port
-          value: 6379
+          value: "6379"
         - name: password
-          value: 
+          value: ""
