@@ -29,5 +29,5 @@ spec:
           value: ""
         readinessProbe:
           httpGet:
-            path: /health
+            path: /
             port: 8000
