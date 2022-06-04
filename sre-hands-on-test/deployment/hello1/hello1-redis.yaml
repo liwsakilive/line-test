@@ -19,4 +19,3 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6379
-  type: ClusterIP
