@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis-hello1-deployment
+  name: redis-hello2-deployment
   namespace: hello
 spec:
   selector:
     matchLabels:
-      app: redis-hello1
+      app: redis-hello2
   replicas: 1
   template:
     metadata:
       labels:
-        app:  redis-hello1
+        app:  redis-hello2
     spec:
       containers:
-      - name: redis-hello1
+      - name: redis-hello2
         image: "docker.io/redis:6.0.5"
         imagePullPolicy: IfNotPresent
         ports:
