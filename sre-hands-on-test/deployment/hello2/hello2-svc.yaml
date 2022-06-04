@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello1-app-service
+  name: hello2-app-service
   namespace: hello
 spec:
   selector:
-    app: hello1-app
+    app: hello2-app
   type: LoadBalancer
   ports:
   - protocol: TCP
     port: 5000
     targetPort: 8000
 #    nodePort: 30001
+  type: ClusterIP

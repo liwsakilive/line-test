@@ -20,9 +20,9 @@ spec:
         image: localhost:32000/hello-2:latest
         ports:
         - containerPort: 8000
-      env:
+        env:
         - name: host
-          value: "hello2-app-service"
+          value: "hello1-app-service"
         - name: port
           value: "6379"
         - name: password

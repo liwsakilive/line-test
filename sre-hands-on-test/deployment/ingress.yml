@@ -1,18 +1,24 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: hello-app-ingress
+  name: hello-ingress
   annotations:
-    ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
-        - path: /hello1
-          backend:
-            serviceName: hello1-app-service
-            servicePort: 5000
-        - path: /hello2
-          backend:
-            serviceName: hello2-app-service
-            servicePort: 5000
+      - path: /hello1
+        pathType: Prefix
+        backend:
+          service:
+            name: hello1-app-service
+            port:
+              number: 5000
+      - path: /hello2
+        pathType: Prefix
+        backend:
+          service:
+            name: hello2-app-service
+            port:
+              number: 5000
