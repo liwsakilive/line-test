@@ -1,7 +1,7 @@
 node('jenkins-slave') {
     
      stage('') {
-        sh(script: "Cloning our Git""
+        sh(script: "Cloning our Git"
             echo "test"
            git clone https://github.com/liwsakilive/line-test.git
            ls -al
