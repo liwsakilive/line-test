@@ -7,7 +7,7 @@ node('jenkins-slave') {
            ls -al
            cd line-test/sre-hands-on-test/hello1/
 
-        """)
+        "")
     }
         stage('Building our image') { 
             steps { 
