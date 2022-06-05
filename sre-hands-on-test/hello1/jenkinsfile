@@ -7,8 +7,8 @@ node('jenkins-slave') {
            ls -al
            cd line-test/sre-hands-on-test/hello1/
            
-           docker build -t registry:32000/hello1:latest .
-           docker push registry:32000/hello1:latest
+           docker build -t liwsakilive/hello1:latest .
+           docker push liwsakilive/hello1:latest
         """)
     }
 }
