@@ -1,12 +1,12 @@
 node('jenkins-slave') {
     
-    stage('Checkout external proj') {
-        steps {
-            git branch: 'main',
-                credentialsId: '47eabcd2-f636-46ee-9c32-b082caf5896a',
-                url: 'ssh://git@github.com:liwsakilive/line-test.git'
-
-            sh "ls -lat"
-        }
+     stage('test pipeline') {
+        sh(script: """
+            echo "test"
+           git clone git@github.com:liwsakilive/line-test.git
+           cd sre-hands-on-test/hello1/
+           
+           docker build . -t test
+        """)
     }
 }
