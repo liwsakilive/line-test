@@ -3,7 +3,9 @@ node('jenkins-slave') {
      stage('test pipeline') {
         sh(script: """
             echo "test"
-           git clone git@github.com:liwsakilive/line-test.git
+           git branch: 'master',
+            credentialsId: '47eabcd2-f636-46ee-9c32-b082caf5896a',
+            url: 'ssh://git@github.com:liwsakilive/line-test.git'
            cd sre-hands-on-test/hello1/
            
            docker build . -t test
