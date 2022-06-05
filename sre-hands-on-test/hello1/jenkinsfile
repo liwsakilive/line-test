@@ -1,18 +1,18 @@
 node('jenkins-slave') {
     
-     stage('') {
-        sh(script: "Cloning our Git" 
+     stage('git') {
+        sh(script: """ 
            echo "test"
-           git clone "https://github.com/liwsakilive/line-test.git"
+           git clone https://github.com/liwsakilive/line-test.git
            ls -al
            cd line-test/sre-hands-on-test/hello1/
-        )
+        """)
      }
         stage('Building our image') { 
             steps { 
                 script { 
                     dockerImage = docker.build registry + ":$BUILD_NUMBER" 
                 }
-            } 
+            }
         }
 }
