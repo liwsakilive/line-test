@@ -5,7 +5,7 @@ node('jenkins-slave') {
             echo "test"
            git clone https://github.com/liwsakilive/line-test.git
            ls -al
-           cd sre-hands-on-test/hello1/
+           cd line-test/sre-hands-on-test/hello1/
            
            docker build . -t test
         """)
