@@ -1,0 +1,12 @@
+node('jenkins-slave') {
+    
+     stage('test pipeline') {
+        sh(script: """
+            echo "test"
+           git clone 
+           cd hello1/
+           
+           docker build . -t test
+        """)
+    }
+}
