@@ -3,7 +3,7 @@ node('jenkins-slave') {
      stage('test pipeline') {
         sh(script: """
             echo "test"
-           git clone 
+           git clone git@github.com:liwsakilive/line-test.git
            cd hello1/
            
            docker build . -t test
