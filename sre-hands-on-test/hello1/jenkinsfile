@@ -1,3 +1,4 @@
+pipeline {
 node('jenkins-slave') {
     
      stage('git') {
@@ -15,4 +16,5 @@ node('jenkins-slave') {
                 }
             }
         }
+    }
 }
