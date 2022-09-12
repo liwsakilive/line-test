@@ -32,6 +32,6 @@ function writeSession() {
     }
     client.set('lastest_session_id', id, redis.print);
     client.set(id, utcDate, redis.print);
-    console.log(id)
+#    console.log(id)
   })
 }
